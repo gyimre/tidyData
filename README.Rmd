@@ -1,0 +1,25 @@
+---
+title: "README"
+author: "Imre Gyori"
+date: '2017 május 8 '
+output: 
+  html_document:
+    code_folding: show
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## UCI HAR Dataset
+
+The run_analysis.R code will pre-process the raw UCI HAR Datasets.
+
+Every cases labeled according to the sample subset ("set"=test/train), the subject (unique identifier of the participants) and the activity (like walking, standing...).
+
+Subsets are merged. Activities are labeled and columns are reordered. From various metrics only the mean and standard deviation statistics are selected.
+
+Finally a tidy set created (DTtidy): averages of metrics by person (subject variable) and activity.
+
+In the CodeBook.hmtl you can find a detailed description of every variable.
+
