@@ -1,0 +1,93 @@
+---
+title: "CodeBook"
+author: "Imre Gyori"
+date: '2017 május 8 '
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Tidy dataset Extracted from raw "UCI HAR" archive
+
+"set" = subset of the subject (train/test)
+
+"subject" = identifier of participant
+
+"activity" = type of activity (walking, standing...)
+
+### Naming convention of metrics:
+the following 66 metrics are all averages by subject and activity
+second part of variable name tells the type of the measurement (accelerometer, gyroscope...)
+third part refers to the metric type (mean or standard deviation)
+finally X,Y,Z tells the given coordinate
+
+  "1" "avg_1_tBodyAcc-mean()-X"
+  "2" "avg_2_tBodyAcc-mean()-Y"
+  "3" "avg_3_tBodyAcc-mean()-Z"
+  "4" "avg_4_tBodyAcc-std()-X"
+  "5" "avg_5_tBodyAcc-std()-Y"
+  "6" "avg_6_tBodyAcc-std()-Z"
+  "7" "avg_41_tGravityAcc-mean()-X"
+  "8" "avg_42_tGravityAcc-mean()-Y"
+  "9" "avg_43_tGravityAcc-mean()-Z"
+  "10" "avg_44_tGravityAcc-std()-X"
+  "11" "avg_45_tGravityAcc-std()-Y"
+  "12" "avg_46_tGravityAcc-std()-Z"
+  "13" "avg_81_tBodyAccJerk-mean()-X"
+  "14" "avg_82_tBodyAccJerk-mean()-Y"
+  "15" "avg_83_tBodyAccJerk-mean()-Z"
+  "16" "avg_84_tBodyAccJerk-std()-X"
+  "17" "avg_85_tBodyAccJerk-std()-Y"
+  "18" "avg_86_tBodyAccJerk-std()-Z"
+  "19" "avg_121_tBodyGyro-mean()-X"
+  "20" "avg_122_tBodyGyro-mean()-Y"
+  "21" "avg_123_tBodyGyro-mean()-Z"
+  "22" "avg_124_tBodyGyro-std()-X"
+  "23" "avg_125_tBodyGyro-std()-Y"
+  "24" "avg_126_tBodyGyro-std()-Z"
+  "25" "avg_161_tBodyGyroJerk-mean()-X"
+  "26" "avg_162_tBodyGyroJerk-mean()-Y"
+  "27" "avg_163_tBodyGyroJerk-mean()-Z"
+  "28" "avg_164_tBodyGyroJerk-std()-X"
+  "29" "avg_165_tBodyGyroJerk-std()-Y"
+  "30" "avg_166_tBodyGyroJerk-std()-Z"
+  "31" "avg_201_tBodyAccMag-mean()"
+  "32" "avg_202_tBodyAccMag-std()"
+  "33" "avg_214_tGravityAccMag-mean()"
+  "34" "avg_215_tGravityAccMag-std()"
+  "35" "avg_227_tBodyAccJerkMag-mean()"
+  "36" "avg_228_tBodyAccJerkMag-std()"
+  "37" "avg_240_tBodyGyroMag-mean()"
+  "38" "avg_241_tBodyGyroMag-std()"
+  "39" "avg_253_tBodyGyroJerkMag-mean()"
+  "40" "avg_254_tBodyGyroJerkMag-std()"
+  "41" "avg_266_fBodyAcc-mean()-X"
+  "42" "avg_267_fBodyAcc-mean()-Y"
+  "43" "avg_268_fBodyAcc-mean()-Z"
+  "44" "avg_269_fBodyAcc-std()-X"
+  "45" "avg_270_fBodyAcc-std()-Y"
+  "46" "avg_271_fBodyAcc-std()-Z"
+  "47" "avg_345_fBodyAccJerk-mean()-X"
+  "48" "avg_346_fBodyAccJerk-mean()-Y"
+  "49" "avg_347_fBodyAccJerk-mean()-Z"
+  "50" "avg_348_fBodyAccJerk-std()-X"
+  "51" "avg_349_fBodyAccJerk-std()-Y"
+  "52" "avg_350_fBodyAccJerk-std()-Z"
+  "53" "avg_424_fBodyGyro-mean()-X"
+  "54" "avg_425_fBodyGyro-mean()-Y"
+  "55" "avg_426_fBodyGyro-mean()-Z"
+  "56" "avg_427_fBodyGyro-std()-X"
+  "57" "avg_428_fBodyGyro-std()-Y"
+  "58" "avg_429_fBodyGyro-std()-Z"
+  "59" "avg_503_fBodyAccMag-mean()"
+  "60" "avg_504_fBodyAccMag-std()"
+  "61" "avg_516_fBodyBodyAccJerkMag-mean()"
+  "62" "avg_517_fBodyBodyAccJerkMag-std()"
+  "63" "avg_529_fBodyBodyGyroMag-mean()"
+  "64" "avg_530_fBodyBodyGyroMag-std()"
+  "65" "avg_542_fBodyBodyGyroJerkMag-mean()"
+  "66" "avg_543_fBodyBodyGyroJerkMag-std()"
+
+
